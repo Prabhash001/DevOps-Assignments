@@ -1,0 +1,27 @@
+
+# Q4: Git Workflow
+
+1. **Create a Master Repository:**
+```bash
+git init devops_assignment
+cd devops_assignment
+echo "# DevOps Assignment" > README.md
+git add README.md
+```
+
+2. **Push Files:**
+```bash
+git remote add origin <your-repo-link>
+git branch -M main
+git push -u origin main
+```
+
+3. **Create New Branch and Merge:**
+```bash
+git checkout -b feature-update
+echo "# Feature Update" >> README.md
+git add README.md
+git commit -m "Added feature update"
+git checkout main
+git merge feature-update
+```
